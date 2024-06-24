@@ -1,0 +1,29 @@
+{
+  "name": "typescript-ode-sample",
+  "version": "1.0.0",
+  "description": "Using ode with typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "tsc",
+    "start": "node index.js"
+  },
+  "author": "Vinnie Alves",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^5.1.4",
+    "@types/node": "^20.14.4",
+    "jasmine-core": "^5.1.2",
+    "karma": "^6.4.3",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-jasmine": "^5.1.0",
+    "karma-webpack": "^5.0.1",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.92.0",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "typescript-ode": "^0.1.0"
+  }
+}
