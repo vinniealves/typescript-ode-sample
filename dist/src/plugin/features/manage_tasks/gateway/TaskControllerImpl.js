@@ -29,7 +29,8 @@ class TaskControllerImpl extends GatewalInjector_1.default {
     }
     add_task(task) {
         // const params = new ParamsAPI(page, "casas");
-        console.log(task);
+        console.log('TCI', task);
+        console.log('TCI_2', this.addTask);
         this.dispatchUseCase(task, this.addTask);
     }
 }

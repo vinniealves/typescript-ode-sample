@@ -5,8 +5,6 @@ import TaskController from "./TaskController";
 export default class GatewayInjector extends BaseViewModel {
     private static _instance: GatewayInjector | null = null;
 
-
-
     static set instance(instance: GatewayInjector) {
         GatewayInjector._instance = instance;
     }

@@ -6,7 +6,7 @@ export default class TaskRepositoryImpl extends TaskRepository {
 
     add(task: Task): void {
         this.tasks.push(task);
-        console.log(this.tasks)
+        console.log('TASK REPOSITORY', this.tasks)
     }
 
     complete(id: string): void {

@@ -5,6 +5,7 @@ class AddTaskUseCase extends typescript_ode_1.UseCase {
     constructor(taskRepository) {
         super();
         this.taskRepository = taskRepository;
+        console.log('INICIEI', this.taskRepository);
         this.taskRepository = taskRepository;
     }
     execute(param) {
@@ -14,7 +15,7 @@ class AddTaskUseCase extends typescript_ode_1.UseCase {
             title: param.title,
             completed: false,
         };
-        this.taskRepository.add(task);
+        // this.taskRepository.add(task)
         return Promise.resolve(new typescript_ode_1.ValueOutput(task));
     }
 }

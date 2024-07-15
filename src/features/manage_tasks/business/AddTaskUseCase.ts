@@ -6,6 +6,7 @@ import TaskRepository from './TaskRepository';
 export default class AddTaskUseCase extends UseCase<AddTaskInput, Task> {
     constructor(private taskRepository: TaskRepository) {
         super();
+        console.log('INICIEI', this.taskRepository)
         this.taskRepository = taskRepository
     }
 
@@ -16,7 +17,7 @@ export default class AddTaskUseCase extends UseCase<AddTaskInput, Task> {
             title: param.title,
             completed: false,
         };
-        this.taskRepository.add(task)
+        // this.taskRepository.add(task)
         return Promise.resolve(new ValueOutput(task))
     }
 }
