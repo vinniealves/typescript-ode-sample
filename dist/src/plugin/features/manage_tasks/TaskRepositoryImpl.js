@@ -11,7 +11,6 @@ class TaskRepositoryImpl extends TaskRepository_1.default {
     }
     add(task) {
         this.tasks.push(task);
-        console.log('TASK REPOSITORY', this.tasks);
     }
     complete(id) {
         const task = this.tasks.find(task => task.id === id);

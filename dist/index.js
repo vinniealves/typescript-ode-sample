@@ -7,6 +7,7 @@ const GatewayInjectorImpl_1 = __importDefault(require("./src/plugin/features/man
 // const completeTaskUseCase = new CompleteTaskUseCase(taskRepository);
 // const listTasksUseCase = new ListTasksUseCase(taskRepository);
 const presenter = GatewayInjectorImpl_1.default.inject();
+console.log(presenter);
 // Adicionar algumas tarefas
 presenter.add_task({ title: 'Teste' });
 // addTaskUseCase.execute({ title: 'Desenvolver uma biblioteca' });

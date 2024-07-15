@@ -32,10 +32,7 @@ export default class TaskControllerImpl extends GatewayInjector implements TaskC
     }
 
     add_task(task: AddTaskInput) {
-        // const params = new ParamsAPI(page, "casas");
-        console.log('TCI', task)
-        console.log('TCI_2', this.addTask)
-        this.dispatchUseCase(task, this.addTask)
+        this.dispatchUseCase(task as Task, this.addTask)
     }
 }
 
