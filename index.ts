@@ -8,8 +8,6 @@ import GatewayInjectorImpl from './src/plugin/features/manage_tasks/gateway/Gate
 
 const presenter = GatewayInjectorImpl.inject();
 
-
-
 // Adicionar algumas tarefas
 presenter.add_task({ title: 'Teste' })
 // addTaskUseCase.execute({ title: 'Desenvolver uma biblioteca' });
